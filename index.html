@@ -21,16 +21,19 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="page-top">
 
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="header">
   <div class="shell header__bar">
     <a class="brand" href="#top">Alan Hall <span>Counselling</span></a>
+    <a class="compact-brand" href="#page-top" aria-label="Alan Hall, back to top">
+      <img src="assets/favicon.svg" width="28" height="28" alt="">
+      <span>Alan Hall</span>
+    </a>
 
-    <!-- CSS-only disclosure: this page ships no JavaScript at all, so the
-         navigation cannot break. -->
+    <!-- The mobile menu also works without JavaScript. -->
     <input class="nav__toggle" type="checkbox" id="nav-toggle" aria-label="Show navigation">
     <label class="nav__label" for="nav-toggle"><span class="burger" aria-hidden="true"></span>Menu</label>
 
@@ -49,7 +52,7 @@
 <main id="main">
 
 <!-- ===================== HERO ===================== -->
-<section class="hero" id="top">
+<section class="hero flower-panel flower-panel--hero" id="top">
   <svg class="leaf leaf--tr" viewBox="0 0 200 320" aria-hidden="true" focusable="false">
     <path d="M100 315C100 315 96 200 96 150 96 74 118 22 152 4 158 60 150 118 132 160 118 192 104 244 100 315Z" fill="currentColor"/>
     <path d="M100 315C100 315 88 214 74 168 52 96 20 54 -2 46 8 100 34 152 60 188 82 218 94 262 100 315Z" fill="currentColor" opacity=".7"/>
@@ -65,9 +68,7 @@
       <p class="eyebrow">Counselling and CBT &middot; Southport, online and by phone</p>
       <h1>Alan Hall</h1>
 
-      <!-- Post-nominals exactly as Alan writes them. They are decoded in full
-           under "About me"; the trust row below carries the plain-English
-           version so the letters are not doing the reassurance on their own. -->
+      <!-- Qualifications are expanded in the About me section. -->
       <ul class="creds">
         <li>CBT L5 Dip</li>
         <li>Dip Counselling</li>
@@ -79,22 +80,22 @@
       <p class="hero__lede">When your mind won't switch off, or your feelings become overwhelming, you don't have to stay stuck.</p>
 
       <div class="actions">
-        <a class="btn btn--primary" href="tel:+447736770100">Call 07736 770 100</a>
+        <a class="btn btn--primary" href="https://secure.counselling-directory.org.uk/introductory-call/110919/select-slot" target="_blank" rel="noopener noreferrer">Book a free 20-minute call</a>
         <a class="btn btn--ghost" href="#help">How I can help</a>
       </div>
 
       <dl class="trust">
         <div>
-          <dt>Registered Member</dt>
-          <dd>British Association for Counselling and Psychotherapy</dd>
+          <dt>£50 per session</dt>
+          <dd>Concessions for trainee counsellors</dd>
         </div>
         <div>
-          <dt>First qualified</dt>
-          <dd>1996</dd>
+          <dt>Free introductory call</dt>
+          <dd>20 minutes to see whether working together feels right</dd>
         </div>
         <div>
-          <dt>First call</dt>
-          <dd>Free, 20 minutes, by telephone</dd>
+          <dt>In person or online</dt>
+          <dd>Southport town centre, or online and by phone across the UK</dd>
         </div>
       </dl>
     </div>
@@ -109,7 +110,7 @@
     <div class="section__head"><h2>How I can help</h2></div>
 
     <div class="helpgrid">
-      <figure class="pullquote">
+      <figure class="pullquote flower-panel flower-panel--daffodil">
         <blockquote>I can help you make sense of what's happening and find a way forward that works for you.</blockquote>
         <svg class="sprig" viewBox="0 0 120 200" aria-hidden="true" focusable="false">
           <path d="M60 198 C60 150 58 96 56 62" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
@@ -156,14 +157,14 @@
 </section>
 
 <!-- ===================== ABOUT ===================== -->
-<section class="section section--yellow" id="about">
+<section class="section section--yellow flower-panel flower-panel--sunflower" id="about">
   <div class="shell">
     <div class="section__head"><h2>About me</h2></div>
     <div class="split">
       <div class="stack">
         <p>I am a Registered Member of the BACP. My subsequent work has included mental health, rehabilitation, education and management. This has given me a strong understanding of psychological difficulties, workplace pressures and the challenges of maintaining balance when life becomes demanding.</p>
         <p>My professional background includes over 30 years of experience across mental health, management and teaching.</p>
-        <p>I studied Philosophy and Psychology, followed by postgraduate study in Philosophy and Mental Health. I was also a Research Fellow at Harris Manchester College, University of Oxford, where my work explored mindfulness, wellbeing and education.</p>
+        <p>I studied Philosophy and Psychology, followed by postgraduate study in Philosophy and Mental Health. From 2022 to 2025, I was a Research Fellow at Harris Manchester College, University of Oxford, where my research focused on mindfulness in education.</p>
         <p>Sessions can focus on a specific issue over a shorter period, or continue for longer where that feels more useful.</p>
       </div>
       <div>
@@ -190,12 +191,14 @@
       <div>
         <h3>Registered Member</h3>
         <p>British Association for Counselling and Psychotherapy (BACP).</p>
-        <a href="https://www.counselling-directory.org.uk/counsellors/alan-hall">View my Counselling Directory profile</a>
-        <p class="logo-slot"><span class="draft-tag">Official BACP logo awaited</span><br>Alan to supply his member-specific logo and registration number from his BACP account.</p>
+        <a class="profile-link" href="https://www.counselling-directory.org.uk/counsellors/alan-hall" target="_blank" rel="noopener noreferrer">
+          <span class="profile-link__copy"><span class="profile-link__eyebrow">Get to know me</span><strong>My Counselling Directory profile</strong><span>My background, experience and approach</span></span>
+          <span class="profile-link__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
       </div>
       <div>
         <img class="accreditation__logo" src="assets/accreditation/psa-accredited-register.png" width="276" height="135" loading="lazy" alt="Professional Standards Authority accredited register">
-        <p class="note"><span class="draft-tag">Draft: logo use to confirm</span><br>PSA mark from Alan's directory profile. Alan to confirm the supplied artwork and usage guidance with BACP before publication.</p>
+
       </div>
     </div>
   </div>
@@ -206,6 +209,13 @@
   <div class="shell">
     <div class="section__head"><h2>What I help with</h2></div>
 
+    <div class="areas-layout">
+      <div class="areas-invitation">
+        <p class="areas-invitation__quote">I can help you make sense of what's happening and find a way forward that works for you.</p>
+        <a class="btn btn--primary" href="https://secure.counselling-directory.org.uk/introductory-call/110919/select-slot" target="_blank" rel="noopener noreferrer">Book a free 20-minute call</a>
+        <p class="note">Free 20-minute telephone consultation</p>
+      </div>
+      <div>
     <p class="section__intro">I have experience working with:</p>
 
     <!-- Verbatim from the "Professional experience" list on his profile, in his
@@ -225,7 +235,8 @@
       <li>Difficulties linked to internet or social media use</li>
     </ul>
 
-    <p class="note"><span class="draft-tag">Draft: Alan to confirm</span><br>This list isn't exhaustive. If what brings you here isn't named above, do get in touch and we can talk it through.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -245,7 +256,7 @@
         <p><strong>Free 20-minute telephone consultation.</strong> This gives us an opportunity to briefly discuss what brings you to therapy, what you would like help with and whether working together feels right for you.</p>
         <p>Sessions can focus on a specific issue over a shorter period, or continue for longer where that feels more useful.</p>
         <div class="actions">
-          <a class="btn btn--primary" href="tel:+447736770100">Book a free intro call</a>
+          <a class="btn btn--primary" href="https://secure.counselling-directory.org.uk/introductory-call/110919/select-slot" target="_blank" rel="noopener noreferrer">Book a free 20-minute call</a>
         </div>
       </div>
     </div>
@@ -253,9 +264,6 @@
     <div class="availability">
       <h3>When I work</h3>
 
-      <!-- The grid mirrors the availability grid on Alan's own profile, cell
-           for cell. Below it are his verbatim day lines, which carry the exact
-           times and whether the day is face to face or online. -->
       <div class="grid-scroll">
         <table class="grid">
           <caption class="sr-only">My availability by time of day and day of the week</caption>
@@ -327,13 +335,13 @@
       </div>
 
       <ul class="daylines">
-        <li><span class="daylines__d">Monday</span> Online or phone 7am to 2pm, and face to face in Southport 5pm to 9pm</li>
-        <li><span class="daylines__d">Tuesday</span> Face to face in Southport, 5pm to 9pm</li>
-        <li><span class="daylines__d">Wednesday</span> Online or phone</li>
-        <li><span class="daylines__d">Friday</span> Face to face in Southport, 1pm to 8pm</li>
-        <li><span class="daylines__d">Saturday</span> Face to face in Southport, 8am to 2pm</li>
+        <li><span class="daylines__d">Monday</span> <span>Online or phone 7am to 2pm, and face to face in Southport 5pm to 9pm</span></li>
+        <li><span class="daylines__d">Tuesday</span> <span>Face to face in Southport, 5pm to 9pm</span></li>
+        <li><span class="daylines__d">Wednesday</span> <span>Online or phone</span></li>
+        <li><span class="daylines__d">Friday</span> <span>Face to face in Southport, 1pm to 8pm</span></li>
+        <li><span class="daylines__d">Saturday</span> <span>Face to face in Southport, 8am to 2pm</span></li>
       </ul>
-      <p class="note"><span class="draft-tag">Draft: Alan to confirm</span><br>Ask about other times if none of these suit.</p>
+
     </div>
   </div>
 </section>
@@ -346,23 +354,25 @@
     <div class="contact">
 
       <!-- The one action. Given the strongest contrast on the page. -->
-      <div class="contact__call">
+      <div class="contact__call flower-panel flower-panel--lavender">
         <p class="contact__callLabel">To arrange a free 20-minute call</p>
         <a class="contact__callNum" href="tel:+447736770100">07736 770 100</a>
-        <p class="contact__callNote">Calls will last no more than 20 minutes. This isn't a crisis support service.</p>
+        <p class="contact__callNote">A free 20-minute call to talk about what brings you here and whether working together feels right for you.</p>
 
         <div class="contact__alt">
-          <p class="contact__altLabel">Or book a slot and send a message</p>
+          <p class="contact__altLabel">Book a call or send a message</p>
+          <div class="contact__buttons">
           <a class="btn btn--onDark" href="https://secure.counselling-directory.org.uk/introductory-call/110919/select-slot" rel="noopener noreferrer" target="_blank">
-            Choose a call time
+            Book a free 20-minute call
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-8.5 8.5M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </a>
           <a class="btn btn--onDark" href="https://secure.counselling-directory.org.uk/counselloremail_110919.html" rel="noopener noreferrer" target="_blank">
             Send a message
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-8.5 8.5M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </a>
+          </div>
           <p class="contact__altNote">Both open on Counselling Directory, where my booking and enquiry forms are hosted.</p>
-          <p class="contact__altNote">For introductory-call requests, the booking page states that you will receive a response within approximately 1 working day.</p>
+          <p class="contact__altNote">You will receive a response to your introductory-call request within approximately one working day.</p>
         </div>
       </div>
 
@@ -374,12 +384,18 @@
           Southport, PR8&nbsp;1JR
         </address>
         <p>The building provides a quiet and professional setting, close to Southport train station, local bus routes and nearby parking.</p>
+        <iframe class="location-map"
+          src="https://www.google.com/maps?q=Hesketh%20Mount%20Therapy%20Rooms%2C%2092-96%20Lord%20Street%2C%20Southport%20PR8%201JR&amp;z=16&amp;output=embed"
+          title="Google Maps: Hesketh Mount Therapy Rooms, Southport"
+          width="600" height="320" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         <p class="maplink">
-          <a href="https://www.openstreetmap.org/search?query=Hesketh%20Mount%2C%2092-96%20Lord%20Street%2C%20Southport%20PR8%201JR" rel="noopener noreferrer" target="_blank">
-            View on OpenStreetMap
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Hesketh%20Mount%20Therapy%20Rooms%2C%2092-96%20Lord%20Street%2C%20Southport%20PR8%201JR" rel="noopener noreferrer" target="_blank">
+            Get directions on Google Maps
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-8.5 8.5M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </a>
         </p>
+        <p class="note">The embedded map is provided by Google. <a href="https://policies.google.com/privacy">Google's privacy policy</a> applies when it loads.</p>
       </div>
 
       <div class="contact__modes">
@@ -407,12 +423,11 @@
       <div class="contact__access">
         <h3>Access</h3>
         <blockquote class="quoted">I am based in a building which has a lift that is accessible to my room. To enter the building, there are double doors to the front, which can open for wheelchair access. There is a very small (1inch) step into the property.</blockquote>
-        <p class="note"><span class="draft-tag">Draft: Alan to confirm current access</span><br>Access wording is from Alan's directory profile. Building access has not been independently checked.</p>
+
       </div>
 
       <div class="contact__clients">
         <h3>Who I see</h3>
-        <span class="draft-tag">Draft: Alan to confirm</span>
         <ul class="pills">
           <li>Young people (13-17)</li>
           <li>Young adults (18-24)</li>
@@ -423,7 +438,7 @@
           <li>Groups</li>
           <li>Organisations</li>
         </ul>
-        <p class="note">Every one of these is ticked on Alan's directory profile, but his written profile only describes one-to-one counselling. Couples, families, groups and organisations are quite different pieces of work, so these need confirming before publication.</p>
+
       </div>
 
     </div>
@@ -435,66 +450,35 @@
   <div class="shell">
     <div class="section__head"><h2>Common questions</h2></div>
 
-    <div class="draft-banner">
-      <p><strong>Draft answers: Alan to confirm.</strong> The questions below are standard, but these answers were drafted from the information on Alan's Counselling Directory profile and have not yet been approved by him. Anything marked with a draft tag needs his wording before this page goes live.</p>
-    </div>
-
     <div class="faq">
       <details>
         <summary>What happens on the free 20-minute call?</summary>
         <div class="faq__body">
-          <span class="draft-tag">Draft</span>
-          <p>It is a short, no-obligation phone conversation. We briefly discuss what brings you to therapy, what you would like help with, and whether working together feels right for you. There is no charge and no commitment to book further sessions.</p>
+          <p>This gives us an opportunity to briefly discuss what brings you to therapy, what you would like help with and whether working together feels right for you.</p>
         </div>
       </details>
       <details>
-        <summary>How long is a session, and what does it cost?</summary>
+        <summary>What does a session cost?</summary>
         <div class="faq__body">
-          <span class="draft-tag">Draft: session length to confirm</span>
-          <p>Sessions are £50. The session length is not stated on Alan's current profile, so this answer needs his confirmation before publication.</p>
+          <p>£50 per session. Concessions are offered for trainee counsellors.</p>
         </div>
       </details>
       <details>
         <summary>How many sessions will I need?</summary>
         <div class="faq__body">
-          <span class="draft-tag">Draft</span>
-          <p>There is no set number. Sessions can focus on a specific issue over a shorter period, or continue for longer where that feels more useful. We can review how things are going as we go along.</p>
+          <p>Sessions can focus on a specific issue over a shorter period, or continue for longer where that feels more useful.</p>
         </div>
       </details>
       <details>
-        <summary>I've never had counselling before. What should I expect?</summary>
+        <summary>What can I expect from counselling?</summary>
         <div class="faq__body">
-          <span class="draft-tag">Draft</span>
-          <p>A comfortable, confidential space where you can talk openly, be heard and feel understood. You set the pace. There is nothing you have to say and no script to follow. The first session is largely about getting to know what has brought you here.</p>
+          <p>I offer a comfortable, confidential space in Southport town centre where you can talk openly, be heard and feel understood.</p>
         </div>
       </details>
       <details>
         <summary>Do you offer online and telephone sessions?</summary>
         <div class="faq__body">
-          <span class="draft-tag">Draft</span>
-          <p>Yes. Online and telephone counselling are available across the UK, using Zoom, Microsoft Teams, WhatsApp or FaceTime. In-person sessions take place in Southport town centre, and home visits are available on request.</p>
-        </div>
-      </details>
-      <details>
-        <summary>Is what I say confidential?</summary>
-        <div class="faq__body">
-          <span class="draft-tag">Draft: Alan's own wording needed</span>
-          <p>I work as a Registered Member of the BACP and to its Ethical Framework, which sets clear expectations around confidentiality and its limits.</p>
-          <p class="todo">The specific wording of Alan's confidentiality agreement is not on his profile. This answer should be in his own words.</p>
-        </div>
-      </details>
-      <details>
-        <summary>What is your cancellation and payment policy?</summary>
-        <div class="faq__body">
-          <span class="draft-tag">Not yet supplied</span>
-          <p>This is not stated on Alan's current profile. It needs his own wording: how to pay, notice required to cancel, and whether late cancellations are charged.</p>
-        </div>
-      </details>
-      <details>
-        <summary>What if you're not the right counsellor for me?</summary>
-        <div class="faq__body">
-          <span class="draft-tag">Draft</span>
-          <p>That is a normal and reasonable thing to find out, and the free introductory call exists partly for this reason. If it isn't the right fit, do say. There is no obligation to continue, and being pointed towards someone better suited is a good outcome.</p>
+          <p>I also provide online and telephone counselling across the UK.</p>
         </div>
       </details>
     </div>
@@ -546,6 +530,10 @@
 
 </main>
 
+<a class="back-to-top" href="#page-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 5v15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
 <footer class="footer">
   <div class="shell">
     <div class="footer__grid">
@@ -565,16 +553,20 @@
       </div>
       <div>
         <h2>Your privacy</h2>
-        <p>This page sets no cookies, runs no analytics and loads its fonts and images locally. External links open services with their own privacy policies.</p>
-        <p><span class="draft-tag">Draft: privacy notice needed</span><br>Alan's contact-data handling and the hosting provider's request logging need to be covered before publication.</p>
+        <p>This website has no analytics or advertising trackers. Its fonts and decorative images are hosted locally.</p>
+        <p>The embedded map loads from Google, which may use cookies and collect information about your visit. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+        <p>Booking requests and messages are submitted through Counselling Directory, rather than collected on this website. See <a href="https://www.counselling-directory.org.uk/privacy.html">Counselling Directory's privacy notice</a> for how those forms handle your information.</p>
       </div>
     </div>
     <p class="footer__base">
       Preview draft for Alan's review. Not yet published or indexed.
-      Built by James Hall.
+      <a href="https://duzo.is-a.dev/">Built by James Hall</a>.
     </p>
   </div>
 </footer>
 
+
+
+<script src="header.js" defer></script>
 </body>
 </html>
