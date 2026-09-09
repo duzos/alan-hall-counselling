@@ -1,0 +1,10 @@
+Jost by The Jost Project Authors
+https://github.com/indestructible-type/Jost
+SIL Open Font License 1.1. Full copyright and licence: JOST-OFL.txt.
+The local latin and latin-ext WOFF2 subsets came from Google Fonts.
+
+Open Sans by The Open Sans Project Authors
+https://github.com/googlefonts/opensans
+SIL Open Font License 1.1. Full copyright and licence: OPEN-SANS-OFL.txt.
+The local latin variable WOFF2 subset came from Google Fonts on 9 September 2026.
+Used at weights 400 and 600. All font requests are served locally.

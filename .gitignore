@@ -1,0 +1,12 @@
+.verification/
+.claude/
+.codex/
+.agents/
+AGENTS.md
+CLAUDE.md
+HANDOFF*.md
+VERIFICATION.md
+*REVIEW*.md
+.idea/
+.DS_Store
+Thumbs.db
