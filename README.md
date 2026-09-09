@@ -179,7 +179,7 @@ and organisations. No further confirmation of this list is needed.
 ## Hosting status
 
 This directory is an independent local Git repository. Creation of the proposed
-`duzos/alan-hall-counselling` GitHub repository and publication await approval.
+Published from the `main` branch of `duzos/alan-hall-counselling` through GitHub Pages.
 The existing preview is at
 [duzo.is-a.dev/sites/counselling/](https://duzo.is-a.dev/sites/counselling/).
 It does not yet contain this restyle.
@@ -208,4 +208,6 @@ The quote panel now uses `assets/daffodil.png`, generated with the built-in imag
 
 Current profile refresh: the About section now specifies the Harris Manchester College, University of Oxford Research Fellowship dates (2022 to 2025) and research focus (mindfulness in education), as stated in the profile training and experience section. Rechecked against https://www.counselling-directory.org.uk/counsellors/alan-hall on 9 September 2026. The existing fee, introductory call, core qualifications and written availability remain consistent with the profile. The profile also lists Wigan WN8 without identifying another consulting room; the website does not infer a second room from that listing.
 
-Booking buttons consistently say "Book a free 20-minute call" and open the Counselling Directory booking form. The hero summarises the £50 fee, free introductory call and meeting options. Availability retains the visual time-of-day grid alongside the exact written weekly hours. The grid preserves broader availability, including Wednesday across all five time bands, without inventing exact Wednesday hours.
+Booking buttons consistently say "Book a free 20-minute call" and open the Counselling Directory booking form. The hero summarises the £50 fee, free introductory call and meeting options. Availability retains the visual time-of-day grid with exact written weekly hours available in its reveals. The grid preserves broader availability, including Wednesday across all five time bands, without inventing exact Wednesday hours.
+
+Availability layout trial: days now run down one table, with five time-band blocks. Hover, focus or tap available blocks for exact hours and session format. Mobile displays each day as a card using the same table content. All 35 availability states and the written hours are preserved; Thursday and Sunday explicitly show no listed availability.

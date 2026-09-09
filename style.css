@@ -133,6 +133,37 @@ a:hover { color: var(--blue-hover); }
 .daylines { margin-top: 24px; border-top: 1px solid #b8aa76; }
 .daylines li { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 4px 20px; padding: 12px 0; border-bottom: 1px solid #b8aa76; }
 .daylines__d { min-width: 100px; font-weight: 600; }
+.availability-table { width: 100%; border-collapse: separate; border-spacing: 5px; table-layout: fixed; margin-top: 20px; }
+.availability-table th { font-size: 13px; line-height: 1.4; padding: 10px 4px; text-align: center; }
+.availability-table th:first-child { width: 100px; text-align: left; }
+.availability-table tbody th { font-size: 15px; }
+.availability-table__slot { height: 56px; padding: 0; background: #fff8de; position: relative; }
+.availability-slot-button { position: absolute; inset: 0; width: 100%; height: 100%; min-height: 44px; border: 0; background: transparent; cursor: pointer; z-index: 1; }
+.availability-slot-button:hover { background: rgba(255, 255, 255, .12); }
+.availability-slot-button:focus-visible { outline: 3px solid white; outline-offset: -4px; }
+.availability-tooltip { position: fixed; z-index: 30; width: max-content; max-width: min(300px, calc(100vw - 24px)); padding: 12px 16px; background: #194867; color: white; border-radius: 6px; box-shadow: 0 4px 16px #0003; font-size: 14px; line-height: 1.5; }
+.availability-table__slot.is-available { background: var(--blue); }
+.availability-table__slot.is-available::after { content: ''; position: absolute; left: 50%; top: 50%; width: 24px; height: 24px; background: url('assets/phone-white.svg') center / contain no-repeat; transform: translate(-50%, -50%); pointer-events: none; }
+.availability-table__slot.mode-person::after { background-image: url('assets/person-white.svg'); }
+.mode-marker::after { content: ''; width: 22px; height: 22px; background: url('assets/phone-white.svg') center / contain no-repeat; }
+.mode-marker.mode-person::after { background-image: url('assets/person-white.svg'); }
+.availability-key { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 18px 0; }
+.availability-key li { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.mode-marker { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; height: 28px; color: white; font-size: 16px; }
+.mode-online, .availability-table__slot.mode-online { background: #25648e; }
+.mode-person, .availability-table__slot.mode-person { background: #665080; }
+.mode-both { background: linear-gradient(90deg, #25648e 50%, #665080 50%); gap: 8px; }
+.availability-table__label { display: none; }
+@media (max-width: 900px) {
+  .availability-table, .availability-table tbody { display: block; }
+  .availability-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .availability-table tr { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px; margin-bottom: 18px; padding: 14px; border: 1px solid #b8aa76; }
+  .availability-table tbody th:first-child { grid-column: 1 / -1; width: auto; padding: 0 0 6px; font-size: 18px; white-space: nowrap; }
+  .availability-table__slot { height: 90px; min-height: 90px; padding: 8px 3px 25px; }
+  .availability-table__label { display: block; font-size: 11px; line-height: 1.35; text-align: center; }
+  .availability-table__slot.is-available { color: white; }
+  .availability-table__slot.is-available::after { top: auto; bottom: 6px; transform: translateX(-50%); }
+}
 .contact { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 28px; }
 .contact > div { padding: 30px; border: 1px solid var(--rule); min-width: 0; }
 @media (min-width: 701px) {

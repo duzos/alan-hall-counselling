@@ -264,83 +264,24 @@
     <div class="availability">
       <h3>When I work</h3>
 
-      <div class="grid-scroll">
-        <table class="grid">
-          <caption class="sr-only">My availability by time of day and day of the week</caption>
-          <thead>
-            <tr>
-              <td></td>
-              <th scope="col"><abbr title="Monday">Mon</abbr></th>
-              <th scope="col"><abbr title="Tuesday">Tue</abbr></th>
-              <th scope="col"><abbr title="Wednesday">Wed</abbr></th>
-              <th scope="col"><abbr title="Thursday">Thu</abbr></th>
-              <th scope="col"><abbr title="Friday">Fri</abbr></th>
-              <th scope="col"><abbr title="Saturday">Sat</abbr></th>
-              <th scope="col"><abbr title="Sunday">Sun</abbr></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Early morning</th>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-            </tr>
-            <tr>
-              <th scope="row">Morning</th>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-            </tr>
-            <tr>
-              <th scope="row">Early afternoon</th>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-            </tr>
-            <tr>
-              <th scope="row">Late afternoon</th>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-            </tr>
-            <tr>
-              <th scope="row">Evening</th>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td class="on"><span class="sr-only">Available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-              <td><span class="sr-only">Not available</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <ul class="daylines">
-        <li><span class="daylines__d">Monday</span> <span>Online or phone 7am to 2pm, and face to face in Southport 5pm to 9pm</span></li>
-        <li><span class="daylines__d">Tuesday</span> <span>Face to face in Southport, 5pm to 9pm</span></li>
-        <li><span class="daylines__d">Wednesday</span> <span>Online or phone</span></li>
-        <li><span class="daylines__d">Friday</span> <span>Face to face in Southport, 1pm to 8pm</span></li>
-        <li><span class="daylines__d">Saturday</span> <span>Face to face in Southport, 8am to 2pm</span></li>
+      <ul class="availability-key" aria-label="Session format key">
+        <li><span class="mode-marker mode-online" aria-hidden="true"></span> Online or phone</li>
+        <li><span class="mode-marker mode-person" aria-hidden="true"></span> In person</li>
       </ul>
+      <p class="note">Hover, focus or tap an available block for session hours. Blocks show usual availability; formats may be offered at different times on the same day.</p>
+      <table class="availability-table">
+        <caption class="sr-only">Weekly availability. Focus or tap available blocks for session hours.</caption>
+        <thead><tr><th scope="col">Day</th><th scope="col">Early morning</th><th scope="col">Morning</th><th scope="col">Early afternoon</th><th scope="col">Late afternoon</th><th scope="col">Evening</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Monday</th><td class="availability-table__slot is-available mode-online"><span class="availability-table__label">Early morning</span><span class="sr-only">Available: Online or phone</span><button class="availability-slot-button" type="button" aria-label="Monday, Early morning. Monday: Online or phone. 7am to 2pm." data-details="Monday: Online or phone. 7am to 2pm."></button></td><td class="availability-table__slot is-available mode-online"><span class="availability-table__label">Morning</span><span class="sr-only">Available: Online or phone</span><button class="availability-slot-button" type="button" aria-label="Monday, Morning. Monday: Online or phone. 7am to 2pm." data-details="Monday: Online or phone. 7am to 2pm."></button></td><td class="availability-table__slot is-available mode-online"><span class="availability-table__label">Early afternoon</span><span class="sr-only">Available: Online or phone</span><button class="availability-slot-button" type="button" aria-label="Monday, Early afternoon. Monday: Online or phone. 7am to 2pm." data-details="Monday: Online or phone. 7am to 2pm."></button></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Late afternoon</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Monday, Late afternoon. Monday: In person, Southport. 5pm to 9pm." data-details="Monday: In person, Southport. 5pm to 9pm."></button></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Evening</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Monday, Evening. Monday: In person, Southport. 5pm to 9pm." data-details="Monday: In person, Southport. 5pm to 9pm."></button></td></tr>
+          <tr><th scope="row">Tuesday</th><td class="availability-table__slot"><span class="availability-table__label">Early morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Early afternoon</span><span class="sr-only">Not available</span></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Late afternoon</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Tuesday, Late afternoon. Tuesday: In person, Southport. 5pm to 9pm." data-details="Tuesday: In person, Southport. 5pm to 9pm."></button></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Evening</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Tuesday, Evening. Tuesday: In person, Southport. 5pm to 9pm." data-details="Tuesday: In person, Southport. 5pm to 9pm."></button></td></tr>
+          <tr><th scope="row">Wednesday</th><td class="availability-table__slot is-available mode-online"><span class="availability-table__label">Early morning</span><span class="sr-only">Available: Online or phone</span><button class="availability-slot-button" type="button" aria-label="Wednesday, Early morning. Wednesday: Online or phone. Exact hours available on enquiry." data-details="Wednesday: Online or phone. Exact hours available on enquiry."></button></td><td class="availability-table__slot is-available mode-online"><span class="availability-table__label">Morning</span><span class="sr-only">Available: Online or phone</span><button class="availability-slot-button" type="button" aria-label="Wednesday, Morning. Wednesday: Online or phone. Exact hours available on enquiry." data-details="Wednesday: Online or phone. Exact hours available on enquiry."></button></td><td class="availability-table__slot is-available mode-online"><span class="availability-table__label">Early afternoon</span><span class="sr-only">Available: Online or phone</span><button class="availability-slot-button" type="button" aria-label="Wednesday, Early afternoon. Wednesday: Online or phone. Exact hours available on enquiry." data-details="Wednesday: Online or phone. Exact hours available on enquiry."></button></td><td class="availability-table__slot is-available mode-online"><span class="availability-table__label">Late afternoon</span><span class="sr-only">Available: Online or phone</span><button class="availability-slot-button" type="button" aria-label="Wednesday, Late afternoon. Wednesday: Online or phone. Exact hours available on enquiry." data-details="Wednesday: Online or phone. Exact hours available on enquiry."></button></td><td class="availability-table__slot is-available mode-online"><span class="availability-table__label">Evening</span><span class="sr-only">Available: Online or phone</span><button class="availability-slot-button" type="button" aria-label="Wednesday, Evening. Wednesday: Online or phone. Exact hours available on enquiry." data-details="Wednesday: Online or phone. Exact hours available on enquiry."></button></td></tr>
+          <tr><th scope="row">Thursday</th><td class="availability-table__slot"><span class="availability-table__label">Early morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Early afternoon</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Late afternoon</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Evening</span><span class="sr-only">Not available</span></td></tr>
+          <tr><th scope="row">Friday</th><td class="availability-table__slot"><span class="availability-table__label">Early morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Early afternoon</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Friday, Early afternoon. Friday: In person, Southport. 1pm to 8pm." data-details="Friday: In person, Southport. 1pm to 8pm."></button></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Late afternoon</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Friday, Late afternoon. Friday: In person, Southport. 1pm to 8pm." data-details="Friday: In person, Southport. 1pm to 8pm."></button></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Evening</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Friday, Evening. Friday: In person, Southport. 1pm to 8pm." data-details="Friday: In person, Southport. 1pm to 8pm."></button></td></tr>
+          <tr><th scope="row">Saturday</th><td class="availability-table__slot"><span class="availability-table__label">Early morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Morning</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Saturday, Morning. Saturday: In person, Southport. 8am to 2pm." data-details="Saturday: In person, Southport. 8am to 2pm."></button></td><td class="availability-table__slot is-available mode-person"><span class="availability-table__label">Early afternoon</span><span class="sr-only">Available: In person</span><button class="availability-slot-button" type="button" aria-label="Saturday, Early afternoon. Saturday: In person, Southport. 8am to 2pm." data-details="Saturday: In person, Southport. 8am to 2pm."></button></td><td class="availability-table__slot"><span class="availability-table__label">Late afternoon</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Evening</span><span class="sr-only">Not available</span></td></tr>
+          <tr><th scope="row">Sunday</th><td class="availability-table__slot"><span class="availability-table__label">Early morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Morning</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Early afternoon</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Late afternoon</span><span class="sr-only">Not available</span></td><td class="availability-table__slot"><span class="availability-table__label">Evening</span><span class="sr-only">Not available</span></td></tr>
+        </tbody>
+      </table>
 
     </div>
   </div>
@@ -559,7 +500,7 @@
       </div>
     </div>
     <p class="footer__base">
-      Preview draft for Alan's review. Not yet published or indexed.
+      Preview for Alan's review.
       <a href="https://duzo.is-a.dev/">Built by James Hall</a>.
     </p>
   </div>
