@@ -40,7 +40,7 @@ and a centred masthead. The design was checked against the reference's rendered
 styles on 9 September 2026. It uses the existing portrait and original botanical
 artwork; no photographs or organisation logos were recreated from the reference.
 
-The hero uses the mixed meadow. The introductory quote, About and phone-number panels
+The hero now uses Alan's supplied sunset sea photograph (22 September 2026); the mixed meadow is retained as an unused variant. The introductory quote, About and phone-number panels
 each use a different close-up: a daffodil, a sunflower and a lavender spike.
 Continuous radial yellow and blue washes span each panel, fading smoothly from
 the text area towards the image edges without rectangular text backgrounds.
@@ -211,3 +211,19 @@ Current profile refresh: the About section now specifies the Harris Manchester C
 Booking buttons consistently say "Book a free 20-minute call" and open the Counselling Directory booking form. The hero summarises the £50 fee, free introductory call and meeting options. Availability retains the visual time-of-day grid with exact written weekly hours available in its reveals. The grid preserves broader availability, including Wednesday across all five time bands, without inventing exact Wednesday hours.
 
 Availability layout trial: days now run down one table, with five time-band blocks. Hover, focus or tap available blocks for exact hours and session format. Mobile displays each day as a card using the same table content. All 35 availability states and the written hours are preserved; Thursday and Sunday explicitly show no listed availability.
+
+## Coastal hero revision, 22 September 2026
+
+The supplied `content.jpg` is preserved as `assets/sea-sunset.jpg`, and
+`IMG_8013.png` as `assets/alan-hall-logo.png`. The screenshots are design references
+only and are not website assets. No generated replacements or photo edits were used.
+The header displays the cave emblem through CSS cropping of the supplied logo,
+with a horizontal live-text wordmark. The supplied full logo is also the favicon.
+
+The hero places the horizon near the lower third, uses a continuous light wash
+behind the introduction, and moves the existing portrait to the right on desktop.
+Fee, consultation and meeting details sit in a dark strip over the water.
+Mobile has its own crop, smaller portrait above the copy and stacked details.
+The header now starts at 100px on desktop (116px tablet, 84px phone) and compacts
+on scroll, retaining its logo, centred desktop links and mobile burger menu.
+Other sections and all availability details are unchanged. This revision is approved for publication on GitHub Pages.

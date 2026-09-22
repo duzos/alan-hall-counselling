@@ -380,6 +380,70 @@ html.header-ready { scroll-padding-top: 64px; }
   .header-ready .header .brand span, .header-ready .header .nav__list { transition: none; }
 }
 
+/* Coastal opening, using Alan's supplied photograph and logo artwork. */
+html, html.header-ready { scroll-padding-top: 100px; }
+.header, .header-ready .header { height: 100px; }
+.header .header__bar { flex-direction: row; min-height: 100px; padding: 14px var(--pad); gap: 28px; transition: min-height .25s ease, padding .25s ease; }
+.header .sea-brand, .header-ready .header .sea-brand { display: flex; flex-direction: row; flex: none; gap: 10px; max-height: none; overflow: visible; opacity: 1; transform: none; visibility: visible; }
+.sea-brand::before { display: none; }
+.sea-brand .sea-brand__mark { position: relative; display: block; flex: none; width: 62px; height: 62px; border-radius: 50%; overflow: hidden; }
+.sea-brand__mark img { position: absolute; max-width: none; width: 180%; height: 180%; left: -40%; top: -17%; }
+.sea-brand .sea-brand__type { display: flex; flex-direction: column; gap: 4px; color: #142f3d; }
+.sea-brand__type strong { font: 400 30px/1 Georgia, serif; letter-spacing: -.8px; }
+.sea-brand .sea-brand__type > span { font: 500 9px/1.4 'Open Sans', sans-serif; text-transform: uppercase; letter-spacing: 3px; color: #40545c; }
+.header .nav__list, .header-ready .header .nav__list { flex: 1; max-width: none; width: auto; margin: 0; padding: 0; border: 0; gap: 4px 24px; justify-content: center; }
+@media (min-width: 1101px) {
+  .header .sea-brand { width: 200px; }
+  .header__bar::after { content: ''; flex: 0 0 200px; }
+}
+.header-compact .header__bar { min-height: 64px; padding-block: 6px; }
+.header-compact .sea-brand .sea-brand__mark { width: 42px; height: 42px; }
+.header-compact .sea-brand__type strong { font-size: 24px; }
+.hero--sea { padding: 0; background: #cfdae0; color: #142f3d; }
+.hero__sea { position: absolute; z-index: -2; top: 0; left: 0; width: 100%; height: 190%; max-width: none; object-fit: cover; object-position: center top; }
+.hero--sea::after { content: ''; position: absolute; z-index: -1; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(240, 245, 246, .65), rgba(240, 245, 246, .3) 47%, transparent 76%); }
+.hero--sea .hero__grid { min-height: 490px; grid-template-columns: minmax(0, 1fr) 240px; gap: 80px; padding-block: 64px 70px; }
+.hero__copy { max-width: 690px; }
+.hero--sea h1 { color: #142f3d; }
+.hero--sea .eyebrow, .hero--sea .creds { color: #24424f; }
+.hero--sea .hero__lede { max-width: 30ch; margin-block: 24px; }
+.hero--sea .portrait { width: 200px; height: 200px; border-width: 5px; align-self: start; margin-top: 52px; }
+.hero--sea .btn--ghost { background: rgba(255, 255, 255, .5); }
+.hero__reassurance { padding-block: 24px; background: rgba(12, 34, 49, .85); color: white; }
+.hero__reassurance .trust { margin: 0; padding: 0; border: 0; gap: 40px; }
+.hero__reassurance .trust dt { color: white; }
+.hero__reassurance .trust dd { color: #e6eef1; }
+@media (min-width: 701px) and (max-width: 1100px) {
+  html, html.header-ready { scroll-padding-top: 120px; }
+  .header, .header-ready .header { height: 116px; }
+  .header .header__bar { min-height: 116px; }
+  .header-compact .header__bar { min-height: 100px; }
+  .header .header__bar { gap: 22px; }
+  .header .nav__list { gap: 0 18px; }
+  .hero--sea .hero__grid { gap: 32px; grid-template-columns: minmax(0, 1fr) 190px; }
+  .hero--sea .portrait { width: 180px; height: 180px; }
+}
+@media (max-width: 700px) {
+  html, html.header-ready { scroll-padding-top: 90px; }
+  .header, .header-ready .header { height: 84px; }
+  .header .header__bar { min-height: 84px; gap: 0; padding-block: 12px; }
+  .sea-brand .sea-brand__mark { width: 48px; height: 48px; }
+  .sea-brand__type strong { font-size: 26px; }
+  .header .sea-brand span, .header-ready .header .sea-brand span { max-height: none; opacity: 1; overflow: visible; }
+  .header .sea-brand .sea-brand__mark, .header-ready .header .sea-brand .sea-brand__mark { overflow: hidden; }
+  .header .nav__list { flex: 1 0 100%; margin-top: 12px; padding-top: 8px; }
+  .header-compact .header__bar { min-height: 64px; padding-block: 6px; }
+  .hero--sea .hero__grid { min-height: 0; grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 36px 44px; }
+  .hero--sea .hero__copy { grid-row: 2; }
+  .hero--sea .portrait { grid-row: 1; width: 112px; height: 112px; margin: 0; justify-self: end; border-width: 3px; }
+  .hero--sea .hero__lede { font-size: 25px; max-width: 30ch; }
+  .hero--sea .hero__sea { height: 185%; object-position: 58% top; }
+  .hero--sea::after { background: linear-gradient(180deg, rgba(240,245,246,.35), rgba(240,245,246,.64) 45%, rgba(240,245,246,.25) 76%, transparent); }
+  .hero__reassurance { padding-block: 24px; }
+  .hero__reassurance .trust { grid-template-columns: 1fr; gap: 20px; }
+  .hero__reassurance .trust > div { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+}
+
 @media print {
   .back-to-top { display: none; }
   html { scroll-padding-top: 0; }
@@ -387,6 +451,9 @@ html.header-ready { scroll-padding-top: 64px; }
   .flower-panel::before, .flower-panel::after { display: none; }
   body { font-size: 11pt; color: #000; }
   .header, .actions, .leaf, .sprig, .contact__alt { display: none; }
+  .hero__sea, .hero--sea::after { display: none; }
+  .hero__reassurance { background: white; color: black; }
+  .hero__reassurance .trust dt, .hero__reassurance .trust dd { color: black; }
   .section, .hero, .footer { padding: 20px 0; background: white; }
   .shell { width: 100%; }
   .contact > .contact__call { background: white; color: black; border: 1px solid black; }
