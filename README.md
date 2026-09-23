@@ -1,9 +1,10 @@
 # Alan Hall Counselling
 
-A static preview website for Alan's counselling and CBT practice in Southport.
+The public website for Alan's counselling and CBT practice in Southport.
 Built with HTML and CSS, with a small local header script, no build step and no analytics.
 The location section embeds Google Maps, which runs its own third-party code.
-The page remains marked `noindex, nofollow` for review.
+It is live and indexable at https://alanhallcounselling.co.uk/, with a canonical
+URL, `robots.txt` and `sitemap.xml`.
 
 ## Preview locally
 
@@ -151,23 +152,20 @@ Maps processing, and external Counselling Directory forms with direct privacy
 links. It does not claim to be a complete counselling-client privacy notice or
 make unverified promises about retention, confidentiality or hosting logs.
 
-## Approval checklist
+## Outstanding details
 
-Before presenting this as a finished public practice site, obtain:
+The site went public on 23 September 2026. These details are still to come from
+Alan and must not be invented in the meantime:
 
-- Alan's final review of the wording.
 - Session length, cancellation/payment terms, confidentiality wording and a
   full privacy notice, including hosting and contact-data handling.
 - BACP registration number and official member logo; verify the current register entry.
-- Resolution of `BSc (Hons)` in the profile heading versus `BSc (Econ)` in its
-  qualifications list. Both are currently preserved from the source.
-- Address confirmation: his profile contains both `PR8 1JR` and `PR9 0PA`.
-  The draft uses the therapy-room postcode, `PR8 1JR`.
 - A higher-resolution portrait, confirmation that it can be used, and a personal
   email address if he wants one displayed.
 - A real-phone check of the menu, availability grid and contact buttons.
-- A final hosting/domain choice before adding canonical metadata or removing
-  the preview banner and `noindex` directive. Noindex is not access control.
+
+The degree is `BSc (Econ)`, and the therapy-room postcode is `PR8 1JR`
+(the profile's `PR9 0PA` is not used). Both confirmed by James on 23 September 2026.
 
 Current building access was confirmed by James on 9 September 2026. The access
 statement on the page is confirmed and needs no further approval.
@@ -178,15 +176,11 @@ and organisations. No further confirmation of this list is needed.
 
 ## Hosting status
 
-This directory is an independent local Git repository. Creation of the proposed
-Published from the `main` branch of `duzos/alan-hall-counselling` through GitHub Pages.
-The existing preview is at
-[duzo.is-a.dev/sites/counselling/](https://duzo.is-a.dev/sites/counselling/).
-It does not yet contain this restyle.
-
-For GitHub Pages, publish `main` from the repository root. Assets use relative
-paths, so the site supports a project subdirectory. Verify the actual HTTPS URL
-and every asset after deployment. Only then remove the former portfolio copy.
+Published from the `main` branch root of `duzos/alan-hall-counselling` through
+GitHub Pages, on the custom domain `alanhallcounselling.co.uk` (`CNAME` file).
+The domain is registered with Cloudflare, whose DNS points the apex at GitHub
+Pages' A/AAAA records and `www` at `duzos.github.io`. Keep those records
+DNS only (not proxied) so GitHub can renew its HTTPS certificate.
 
 ## Resource sources
 

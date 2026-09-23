@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alanhallcounselling.co.uk/sitemap.xml
