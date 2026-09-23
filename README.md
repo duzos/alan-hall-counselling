@@ -162,10 +162,12 @@ Alan and must not be invented in the meantime:
 - BACP registration number and official member logo; verify the current register entry.
 - A higher-resolution portrait, confirmation that it can be used, and a personal
   email address if he wants one displayed.
-- A real-phone check of the menu, availability grid and contact buttons.
 
 The degree is `BSc (Econ)`, and the therapy-room postcode is `PR8 1JR`
 (the profile's `PR9 0PA` is not used). Both confirmed by James on 23 September 2026.
+
+The real-phone check of the menu, availability grid and contact buttons passed on
+23 September 2026.
 
 Current building access was confirmed by James on 9 September 2026. The access
 statement on the page is confirmed and needs no further approval.
