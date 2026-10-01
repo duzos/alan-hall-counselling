@@ -229,11 +229,11 @@ a:hover { color: var(--blue-hover); }
 .footer a { display: inline-block; min-height: 32px; }
 .footer__base { border-top: 1px solid var(--rule); padding-top: 20px; margin-top: 30px; max-width: none; color: var(--muted); }
 
-/* Flowers move independently of the soft, stationary washes behind text. */
+/* Photos move independently of the soft, stationary washes behind text. */
 .flower-panel { --flower-image: url('assets/mixed-flower-field.png'); --text-wash: rgba(247, 230, 163, .78); position: relative; isolation: isolate; overflow: hidden; }
-.flower-panel--daffodil { --flower-image: url('assets/daffodil.png'); }
-.flower-panel--sunflower { --flower-image: url('assets/sunflower.png'); }
-.flower-panel--lavender { --flower-image: url('assets/lavender-blue.png'); --text-wash: rgba(37, 100, 142, .78); }
+.flower-panel--sand { --flower-image: url('assets/sand-sunset.jpg'); }
+.flower-panel--fells { --flower-image: url('assets/fells-tree.jpg'); }
+.flower-panel--sea { --flower-image: url('assets/sea-stack.jpg'); --text-wash: rgba(37, 100, 142, .78); }
 .flower-panel::before {
   content: ''; position: absolute; z-index: -2; inset: -200px 0;
   pointer-events: none; opacity: .6;
@@ -247,27 +247,42 @@ a:hover { color: var(--blue-hover); }
 .flower-panel--hero::after {
   background: radial-gradient(ellipse at 25% 48%, rgba(247, 230, 163, .86) 0%, rgba(247, 230, 163, .76) 32%, rgba(247, 230, 163, .43) 65%, rgba(247, 230, 163, .08) 100%);
 }
-.flower-panel--sunflower::after {
-  background: radial-gradient(ellipse at center, rgba(247, 230, 163, .86) 0%, rgba(247, 230, 163, .77) 35%, rgba(247, 230, 163, .48) 70%, rgba(247, 230, 163, .12) 100%);
+/* Dark fell-green wash keeps the photo's colour (a pale wash turns it milky); text
+   goes white with warm gold accents taken from the sunlit hills. */
+.flower-panel--fells { --fell-gold: #f1dfa0; background: #1d3322; color: var(--white); }
+.flower-panel--fells::before { opacity: 1; }
+.flower-panel--fells::after {
+  background: radial-gradient(ellipse at center, rgba(20, 38, 24, .8) 0%, rgba(20, 38, 24, .72) 40%, rgba(20, 38, 24, .5) 75%, rgba(20, 38, 24, .3) 100%);
 }
-.flower-panel--lavender::after {
+.flower-panel--fells h2, .flower-panel--fells h3 { color: var(--fell-gold); }
+.flower-panel--fells .ticklist li { border-bottom-color: rgba(255, 255, 255, .22); }
+.flower-panel.flower-panel--fells .ticklist li::before { color: var(--fell-gold); }
+.flower-panel--fells .note { color: #dbe4d6; }
+.flower-panel--sea::after {
   background: radial-gradient(ellipse at 25% 50%, rgba(37, 100, 142, .86) 0%, rgba(37, 100, 142, .76) 32%, rgba(37, 100, 142, .43) 68%, rgba(37, 100, 142, .08) 100%);
 }
-.flower-panel--lavender > .contact__alt { max-width: 760px; }
-.pullquote.flower-panel--daffodil { padding-bottom: 210px; background: var(--yellow); }
-.pullquote.flower-panel--daffodil::before {
+.flower-panel--sea > .contact__alt { max-width: 760px; }
+.pullquote.flower-panel--sand { padding-bottom: 210px; background: var(--yellow); }
+.pullquote.flower-panel--sand::before {
   inset: -80px 0;
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
   animation: none;
-  transform: translateY(var(--daffodil-offset, 0px));
+  transform: translateY(var(--sand-offset, 0px));
 }
-.flower-panel--daffodil::after {
+.flower-panel--sand::after {
   content: ''; position: absolute; z-index: -1; inset: 0; pointer-events: none;
   background: linear-gradient(to bottom, rgba(247, 230, 163, .78) 0%, rgba(247, 230, 163, .68) 25%, rgba(247, 230, 163, .48) 50%, rgba(247, 230, 163, .24) 75%, rgba(247, 230, 163, .08) 100%);
 }
-.flower-panel--lavender::before { background-position: 65% center; }
+.flower-panel--sea::before { background-position: 65% center; }
+/* Cove: pale sea-blue wash under the FAQs. */
+.flower-panel--cove { --flower-image: url('assets/cove.jpg'); background: #e6f1f7; }
+.flower-panel--cove::before { opacity: .9; }
+.flower-panel--cove::after {
+  background: radial-gradient(ellipse at center, rgba(230, 241, 247, .86) 0%, rgba(230, 241, 247, .76) 40%, rgba(230, 241, 247, .5) 75%, rgba(230, 241, 247, .2) 100%);
+}
+.flower-panel--cove .faq details { border-bottom-color: #8fb3c9; }
 .flower-panel .leaf, .flower-panel .sprig { display: none; }
 .flower-panel .eyebrow, .flower-panel .trust dt,
 .flower-panel .ticklist li::before, .flower-panel .btn--ghost { color: var(--blue-hover); }

@@ -26,9 +26,10 @@ You can also open `index.html` directly.
 | `assets/alan-hall.png` | Existing 400 by 400 portrait, displayed at a smaller size |
 | `assets/favicon.svg` | Original botanical identity mark |
 | `assets/mixed-flower-field.png` | Generated daisies, sunflowers and lavender meadow, served locally |
-| `assets/daffodil.png` | Centred yellow daffodil in the introductory quote panel |
-| `assets/sunflower.png` | Individual sunflower behind About me |
-| `assets/lavender-blue.png` | Lavender on a blue backdrop behind the phone-number panel |
+| `assets/sand-sunset.jpg` | Rippled sand at sunset, Alan's photo, in the introductory quote panel |
+| `assets/cove.jpg` | Wooded cove, Alan's photo, behind the FAQs |
+| `assets/fells-tree.jpg` | Tree below sunlit fells, Alan's photo, behind About me |
+| `assets/sea-stack.jpg` | Sea stack in turquoise water, Alan's photo, behind the phone-number panel |
 | `assets/fonts/` | Self-hosted Jost and Open Sans plus their licence files |
 | `assets/accreditation/` | PSA Quality Mark sourced from the directory profile |
 | `.gitignore` | Excludes editor settings, agent files, handoffs and verification scratch work |
