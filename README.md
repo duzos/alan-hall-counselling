@@ -1,6 +1,6 @@
 # Alan Hall Counselling
 
-The public website for Alan's counselling and CBT practice in Southport.
+The public website for Alan's counselling and CBT practice in Parbold, Lancashire.
 Built with HTML and CSS, with a small local header script, no build step and no analytics.
 The location section embeds Google Maps, which runs its own third-party code.
 It is live and indexable at https://alanhallcounselling.co.uk/, with a canonical
@@ -30,6 +30,8 @@ You can also open `index.html` directly.
 | `assets/cove.jpg` | Wooded cove, Alan's photo, behind the FAQs |
 | `assets/fells-tree.jpg` | Tree below sunlit fells, Alan's photo, behind About me |
 | `assets/sea-stack.jpg` | Sea stack in turquoise water, Alan's photo, behind the phone-number panel |
+| `assets/parbold-windmill-canal.jpg` | Parbold windmill and canal bridge, Alan's profile photo, in The room |
+| `assets/canal-towpath-dog.jpg`, `canal-towpath.jpg`, `canal-narrowboats.jpg` | Canal towpath photos from Alan's profile, in Walk and talk |
 | `assets/fonts/` | Self-hosted Jost and Open Sans plus their licence files |
 | `assets/accreditation/` | PSA Quality Mark sourced from the directory profile |
 | `.gitignore` | Excludes editor settings, agent files, handoffs and verification scratch work |
@@ -43,11 +45,11 @@ styles on 9 September 2026. It uses the existing portrait and original botanical
 artwork; no photographs or organisation logos were recreated from the reference.
 
 The hero now uses Alan's supplied sunset sea photograph (22 September 2026); the mixed meadow is retained as an unused variant. The introductory quote, About and phone-number panels
-each use a different close-up: a daffodil, a sunflower and a lavender spike.
+each use one of Alan's photos: rippled sand at sunset, a tree below the fells and a sea stack (the earlier daffodil, sunflower and lavender close-ups were replaced on 1 October 2026).
 Continuous radial yellow and blue washes span each panel, fading smoothly from
 the text area towards the image edges without rectangular text backgrounds.
 The moving image layers use 60% opacity. The quote
-uses a stationary vertical fade to reveal the flower below its text. The daffodil covers its own panel, with 80px of vertical overscan and 120px of locally calculated parallax travel. It never uses a viewport-fixed background; reduced-motion disables its movement. Native CSS
+uses a stationary vertical fade to reveal the flower below its text. The sand photo covers its own panel, with 80px of vertical overscan and 120px of locally calculated parallax travel. It never uses a viewport-fixed background; reduced-motion disables its movement. Native CSS
 scroll timelines move the background
 through 360px of travel while the content stays still. The layer extends 200px
 beyond each vertical edge to avoid gaps. Older desktop browsers use a
@@ -100,7 +102,7 @@ not as repeated notes addressed to Alan on the client-facing page. Do not invent
 service promises or policy wording to fill those gaps.
 Do not introduce em dashes.
 
-The availability table preserves the profile's 35 individual states. Every cell
+The availability table preserves the profile's 35 individual states on screens wider than 900px; narrower screens show a one-line summary instead. Every cell
 has accessible wording and available cells also have a visible tick. The eleven
 experience entries use the ten-item professional-experience list plus the
 internet/social-media experience described in his prose. They are not a list of
@@ -140,8 +142,8 @@ the [enquiry page](https://secure.counselling-directory.org.uk/counselloremail_1
 does not state a response time. Both pages were read directly on 9 September 2026.
 
 Fonts and decorative images load locally. The room section contains a responsive,
-lazy-loaded Google Maps iframe for Hesketh Mount Therapy Rooms at 92-96 Lord
-Street, Southport PR8 1JR, plus a directions link. It connects to Google and may
+lazy-loaded Google Maps iframe centred on the Parbold postcode WN8 7NJ (the
+profile gives no street address), plus a directions link. It connects to Google and may
 involve Google cookies and visitor-data processing; privacy links appear beside
 the map and in the footer. This does not establish how a future hosting provider
 logs requests, or how Alan handles contact information. A full privacy notice
@@ -163,15 +165,21 @@ Alan and must not be invented in the meantime:
 - BACP registration number and official member logo; verify the current register entry.
 - A higher-resolution portrait, confirmation that it can be used, and a personal
   email address if he wants one displayed.
+- Walk and talk details: fee (the profile prices only face to face £50 and online
+  £45), session length, meeting point, whether dogs can come, and what happens in
+  bad weather.
+- Home visit details: fee (the profile prices only face to face £50 and online
+  £45) and how far he travels.
 
-The degree is `BSc (Econ)`, and the therapy-room postcode is `PR8 1JR`
-(the profile's `PR9 0PA` is not used). Both confirmed by James on 23 September 2026.
+The degree is `BSc (Econ)`, confirmed by James on 23 September 2026; the profile
+header's `BSc (Hons)` is not used.
 
 The real-phone check of the menu, availability grid and contact buttons passed on
 23 September 2026.
 
-Current building access was confirmed by James on 9 September 2026. The access
-statement on the page is confirmed and needs no further approval.
+The access statement (first floor, wide staircase, one-inch step) is Alan's
+profile wording as read on 16 October 2026; the 9 September confirmation applied
+to the former Southport room.
 
 All eight client types in "Who I see" were confirmed by James on 9 September
 2026: young people, young adults, adults, older adults, couples, families, groups
@@ -201,13 +209,51 @@ Papyrus currently advertises `0300 102 2470`; older directories and PDFs still
 show a different number. Mind excludes bank holidays. Do not describe every
 helpline as free: 0300 calls may be charged by the caller's provider.
 
-The quote panel now uses `assets/daffodil.png`, generated with the built-in image generator. Prompt: "Photorealistic botanical website background, square composition. One golden yellow daffodil with its unmistakable trumpet-shaped centre and six outer petals, on a slender green stem. Entire flower head fully visible and centred horizontally and vertically, occupying about 45% of the image width, ample space around it. Soft warm pale yellow background matching #f7e6a3, gentle natural sunlight, calm mood for a counselling website. No text, logos or watermark." The dandelion is an unused variant.
+The quote panel now uses `assets/daffodil.png`, generated with the built-in image generator. Prompt: "Photorealistic botanical website background, square composition. One golden yellow daffodil with its unmistakable trumpet-shaped centre and six outer petals, on a slender green stem. Entire flower head fully visible and centred horizontally and vertically, occupying about 45% of the image width, ample space around it. Soft warm pale yellow background matching #f7e6a3, gentle natural sunlight, calm mood for a counselling website. No text, logos or watermark." The dandelion is an unused variant. (Superseded 1 October 2026 by Alan's sand photo.)
 
-Current profile refresh: the About section now specifies the Harris Manchester College, University of Oxford Research Fellowship dates (2022 to 2025) and research focus (mindfulness in education), as stated in the profile training and experience section. Rechecked against https://www.counselling-directory.org.uk/counsellors/alan-hall on 9 September 2026. The existing fee, introductory call, core qualifications and written availability remain consistent with the profile. The profile now states that other face-to-face locations in Lancashire, Merseyside and Greater Manchester may be available; the website mirrors that wording without naming a second room.
+Current profile refresh: the About section now specifies the Harris Manchester College, University of Oxford Research Fellowship dates (2022 to 2025) and research focus (mindfulness in education), as stated in the profile training and experience section. Rechecked against https://www.counselling-directory.org.uk/counsellors/alan-hall on 9 September 2026. The existing fee, introductory call, core qualifications and written availability remain consistent with the profile. The profile now states that other face-to-face locations in Lancashire, Merseyside and Greater Manchester may be available; the website mirrors that wording without naming a second room (restored with home visits 16 October 2026; see below).
 
-Booking buttons consistently say "Book a free 20-minute call" and open the Counselling Directory booking form. The hero summarises the fees (£50 in person, £45 online), free introductory call and meeting options. Availability retains the visual time-of-day grid with exact written weekly hours available in its reveals. The grid preserves broader availability, including Wednesday across all five time bands, without inventing exact Wednesday hours.
+Booking buttons consistently say "Book a free 20-minute call" and open the Counselling Directory booking form. The hero summarises the fees (£50 in person, £45 online), free introductory call and meeting options. Availability retains the visual time-of-day grid (its hours and formats were superseded on 16 October 2026; see below). The grid preserves broader availability, including Wednesday across all five time bands, without inventing exact Wednesday hours.
 
-Availability layout trial: days now run down one table, with five time-band blocks. Hover, focus or tap available blocks for exact hours and session format. Mobile displays each day as a card using the same table content. All 35 availability states and the written hours are preserved; Thursday and Sunday explicitly show no listed availability.
+Availability layout trial (superseded 16 October 2026; see below): days now run down one table, with five time-band blocks. Hover, focus or tap available blocks for exact hours and session format. Mobile displays each day as a card using the same table content. All 35 availability states and the written hours are preserved; Thursday and Sunday explicitly show no listed availability.
+
+## Parbold move and walk and talk, 16 October 2026
+
+Alan no longer has the Southport room at Hesketh Mount (confirmed by James on
+16 October 2026). The profile, read in Firefox on 16 October 2026 because
+Counselling Directory blocks automated fetches, now places him in a canal-side
+room in Parbold, WN8 7NJ. Its stale "Southport, Merseyside, PR9" location is not
+used. Everything Southport-specific was replaced with his profile wording: the
+introduction, The room (his "Further information" paragraphs), access (first
+floor, wide staircase), fees, footer and FAQs. The wider Lancashire, Merseyside and Greater Manchester wording stays, now
+explicitly including home visits: James confirmed on 16 October 2026 that Alan
+still offers home visits across Lancashire, Merseyside and Greater Manchester,
+although the profile no longer says so. Concessions now list OAPs, students, trainee counsellors,
+unemployed people and refugees. MBCT joins the mindfulness card.
+
+The profile's availability grid now ticks all 35 slots and no longer gives hours
+or formats per slot, so every block shows a tick, with no in-person/online key and
+no per-slot pop-ups (they would only repeat the same thing 35 times; the tooltip
+script and styles were removed). Below 900px the grid gives way to one line,
+"Available every day, early morning to evening". The note
+says only that this is his usual availability from the profile.
+
+The profile's "Therapies offered" list now appears under How I work, and the
+room text ends with his closing invitation, minus "or email" because the site
+shows no email address.
+
+The new Walk and talk section was requested by Alan after seeing
+[Room To Be You](https://roomtobeyou.co.uk/therapy-options). Its prose is his own
+"Walk and Talk Counselling in Parbold" profile text, presented as its own
+section with a booking button and his canal photos, as the rival does. None of
+the rival's wording or claims (session structure, dogs welcome, weather
+fallback, pricing) is used, because Alan has not confirmed them; the lead photo
+is a towpath view rather than his dog for the same reason. The title now carries
+the search details in the same way, as he asked, kept to about 60 characters and ending with his name.
+
+Photos: `assets/parbold-windmill-canal.jpg`, `canal-towpath-dog.jpg`,
+`canal-towpath.jpg` and `canal-narrowboats.jpg` are Alan's own setting photos
+from his profile, re-encoded as JPEG.
 
 ## Coastal hero revision, 22 September 2026
 
